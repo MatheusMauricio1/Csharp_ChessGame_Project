@@ -1,0 +1,15 @@
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\bin\Debug\net7.0\ChessGame_Project.exe
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\bin\Debug\net7.0\ChessGame_Project.deps.json
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\bin\Debug\net7.0\ChessGame_Project.runtimeconfig.json
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\bin\Debug\net7.0\ChessGame_Project.dll
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\bin\Debug\net7.0\ChessGame_Project.pdb
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.csproj.AssemblyReference.cache
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.dll
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\refint\ChessGame_Project.dll
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.pdb
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ChessGame_Project.genruntimeconfig.cache
+C:\Users\Matheus\Desktop\Csharp_ChessGame_Project\ChessGame_Project\ChessGame_Project\obj\Debug\net7.0\ref\ChessGame_Project.dll
