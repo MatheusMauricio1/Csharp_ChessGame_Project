@@ -7,9 +7,9 @@ namespace ChessGame_Project
     {
         static void Main(string[] args) 
         {
-            Board brd = new Board(3, 4);
-            
-            Console.WriteLine(brd);
+            Board brd = new Board(8, 8);
+
+            Screen.printBoard(brd);           
         }
 
     }
