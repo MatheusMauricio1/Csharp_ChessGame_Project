@@ -10,12 +10,12 @@ namespace board
         public int qntMovements { get; protected set; }
         public Board board { get; protected set; }
         
-        public Piece (Position position, Board board, Color color)
+        public Piece (Board board, Color color)
         {
-            this.position = position; 
+            position = null; 
             this.board = board;
             this.color = color;
-            this.qntMovements = 0;
+            qntMovements = 0;
         }
 
     }
