@@ -8,11 +8,19 @@ namespace ChessGame_Project
     {
         static void Main(string[] args) 
         {
-            Board brd = new Board(8, 8);
+            try
+            {
+                Board brd = new Board(8, 8);
 
-            brd.insertPiece(new King(brd, Color.White), new Position(0, 0));
+                brd.insertPiece(new King(brd, Color.White), new Position(0, 0));
+                brd.insertPiece(new King(brd, Color.Black), new Position(0, 7));
 
-            Screen.printBoard(brd);           
+                Screen.printBoard(brd);
+            }
+            catch (BoardException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
     }

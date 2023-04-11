@@ -19,11 +19,48 @@ namespace board
         {
             return pieces[line, column];
         }
+        public Piece piece(Position pos)
+        {
+            return pieces[pos.line, pos.column];
+        }
+
+        public bool isThereApiece(Position pos)
+        {
+            validatePosition(pos);
+            return piece(pos) != null;
+        }
 
         public void insertPiece(Piece p, Position pos)
         {
-            pieces[pos.line, pos.column] = p;
-            p.position = pos;
+            if (isThereApiece(pos))
+            {
+                throw new BoardException("There is already a piece at that position!");
+            }
+            else
+            {
+                pieces[pos.line, pos.column] = p;
+                p.position = pos;
+            }
+        }
+
+        public bool validPosition(Position pos)
+        {
+            if (pos.line < 0 || pos.line >= lines || pos.column < 0 || pos.column >= columns) 
+            {
+                return false;
+            }
+            else
+            {
+                return true;    
+            }
+        }
+        public void validatePosition(Position pos)
+        {
+            if(!validPosition(pos))
+            {
+                throw new BoardException("Invalid Position!");
+            }
+
         }
     }
 }
