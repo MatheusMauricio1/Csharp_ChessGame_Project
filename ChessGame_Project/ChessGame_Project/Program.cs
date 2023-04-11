@@ -10,8 +10,12 @@ namespace ChessGame_Project
         {
             try
             {
-                ChessPosition chessPosition = new ChessPosition('a', 2);
-                Console.WriteLine(chessPosition.toPosition());
+                Board brd = new Board(8, 8);
+
+                brd.insertPiece(new King(brd, Color.White), new Position(0, 0));
+                brd.insertPiece(new King(brd, Color.Black), new Position(0, 7));
+
+                Screen.printBoard(brd);
             }
             catch (BoardException e)
             {
