@@ -10,12 +10,24 @@ namespace ChessGame_Project
         {
             try
             {
-                Board brd = new Board(8, 8);
+                
+                ChessMatch chessMatch = new ChessMatch();
 
-                brd.insertPiece(new King(brd, Color.White), new Position(0, 0));
-                brd.insertPiece(new King(brd, Color.Black), new Position(0, 7));
+                while(!chessMatch.finished)
+                {
+                    Console.Clear();
+                    Screen.printBoard(chessMatch.brd);
 
-                Screen.printBoard(brd);
+                    Console.WriteLine();
+                    Console.Write("Origin: ");
+                    Position origin = Screen.readChessPositions().toPosition();
+                    Console.Write("Destiny: ");
+                    Position destiny = Screen.readChessPositions().toPosition();
+
+                    chessMatch.executeMovement(origin, destiny);
+
+
+                }               
             }
             catch (BoardException e)
             {

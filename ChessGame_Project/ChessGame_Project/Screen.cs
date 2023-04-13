@@ -1,4 +1,5 @@
 ﻿using board;
+using chess;
 
 namespace ChessGame_Project
 {
@@ -24,6 +25,13 @@ namespace ChessGame_Project
                 Console.WriteLine();
             }
             Console.WriteLine("  a b c d e f g h");
+        }
+        public static ChessPosition readChessPositions()
+        {
+            string s = Console.ReadLine();
+            char column = s[0];
+            int line = int.Parse(s[1] + "");
+            return new ChessPosition(column, line);
         }
         public static void printPieces(Piece piece)
         {

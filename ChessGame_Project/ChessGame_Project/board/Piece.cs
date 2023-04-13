@@ -18,5 +18,10 @@ namespace board
             qntMovements = 0;
         }
 
+        public void incrementQntMoves()
+        {
+            qntMovements++;
+        }
+
     }
 }
