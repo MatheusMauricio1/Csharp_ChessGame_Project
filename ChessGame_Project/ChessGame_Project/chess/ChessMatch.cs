@@ -22,7 +22,7 @@ namespace chess
         public void executeMovement(Position origin, Position destiny)
         {
             Piece p = brd.removePiece(origin);
-            p.incrementQntMoves();
+            p.incrementQntMovements();
             Piece capturedPiece = brd.removePiece(destiny);
             brd.insertPiece(p, destiny);
         

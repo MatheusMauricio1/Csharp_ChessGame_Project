@@ -2,7 +2,7 @@
 
 namespace board
 {
-    internal class Piece
+    abstract class Piece
     {
         public Position position { get; set; }
         public Color color { get; protected set; }
@@ -12,13 +12,15 @@ namespace board
         
         public Piece (Board board, Color color)
         {
-            position = null; 
+            this.position = null; 
             this.board = board;
             this.color = color;
             qntMovements = 0;
         }
 
-        public void incrementQntMoves()
+        public abstract bool[,] possibleMovements();
+
+        public void incrementQntMovements()
         {
             qntMovements++;
         }
