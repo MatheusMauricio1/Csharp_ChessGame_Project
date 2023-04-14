@@ -1,5 +1,8 @@
 ﻿
 
+using chess;
+using System.IO.Compression;
+
 namespace board
 {
     abstract class Piece
@@ -25,5 +28,25 @@ namespace board
             qntMovements++;
         }
 
+
+        public bool isTherePossibleMovements()
+        {
+            bool[,] mat = possibleMovements();
+            for(int i = 0; i < board.lines; i++)
+            {
+                for(int j = 0;j < board.columns; j++)
+                {
+                    if (mat[i, j] == true)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        public bool mayMoveToPosition(Position pos)
+        {
+            return possibleMovements()[pos.line, pos.column];
+        }
     }
 }
